@@ -1,0 +1,47 @@
+{
+  "name": "ts-base-template",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "TypeScript base template with Vite, ESLint and Prettier",
+  "author": "luckygc",
+  "license": "Apache-2.0",
+  "keywords": [
+    "typescript",
+    "vite",
+    "vue",
+    "eslint",
+    "prettier"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks"
+  },
+  "dependencies": {
+    "vue": "^3.5.17"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.16.2",
+    "@types/node": "^24.0.10",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/tsconfig": "^0.7.0",
+    "eslint-plugin-format": "^1.0.1",
+    "lint-staged": "^16.1.2",
+    "sass": "^1.89.2",
+    "simple-git-hooks": "^2.13.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.2",
+    "vite-plugin-vue-devtools": "^7.7.7",
+    "vue-tsc": "^3.0.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
