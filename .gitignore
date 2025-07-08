@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.idea
+!.idea/vcs.xml
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.DS_Store
